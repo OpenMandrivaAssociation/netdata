@@ -1,12 +1,12 @@
 Name: netdata
-Version: 1.4.0
+Version: 1.11.0
 Release: 1
 Summary: Real-time performance monitoring, done right!
 License: GPLv3+
 Group: File tools
 Url: http://netdata.firehol.org/
 # Source-git: https://github.com/firehol/netdata.git
-Source0: https://github.com/firehol/netdata/releases/download/v1.4.0/%{name}-%{version}.tar.xz
+Source0: https://github.com/netdata/netdata/archive/v%{version}.tar.gz
 
 BuildRequires: zlib-devel
 BuildRequires: pkgconfig(uuid)
@@ -57,6 +57,7 @@ install -m 644 -p system/netdata.service %buildroot%_unitdir/netdata.service
 %attr(-,netdata,netdata) %dir %_localstatedir/log/%name
 %dir %_sysconfdir/%name/
 %config(noreplace) %_sysconfdir/%name/*.conf
+%_sysconfdir/netdata/edit-config
 %_sysconfdir/%name/health.d/
 %_sysconfdir/%name/python.d/
 %_sbindir/%name
@@ -68,3 +69,4 @@ install -m 644 -p system/netdata.service %buildroot%_unitdir/netdata.service
 %_libexecdir/%name/python.d/
 %dir %_datadir/%name
 %_datadir/%name/web
+%{_libdir}/netdata/conf.d/
