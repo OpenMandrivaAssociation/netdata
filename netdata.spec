@@ -4,7 +4,7 @@ Release:	2
 Summary: Real-time performance monitoring, done right!
 License: GPLv3+
 Group: File tools
-Url: http://netdata.firehol.org/
+Url: https://netdata.firehol.org/
 # Source-git: https://github.com/firehol/netdata.git
 Source0: https://github.com/netdata/netdata/archive/v%{version}.tar.gz
 
