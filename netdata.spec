@@ -1,6 +1,6 @@
 Name: netdata
 Version:	1.18.0
-Release:	2
+Release:	3
 Summary: Real-time performance monitoring, done right!
 License: GPLv3+
 Group: File tools
