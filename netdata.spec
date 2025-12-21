@@ -8,6 +8,11 @@ Url: https://netdata.firehol.org/
 # Source-git: https://github.com/firehol/netdata.git
 Source0: https://github.com/netdata/netdata/archive/v%{version}.tar.gz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: zlib-devel
 BuildRequires: pkgconfig(uuid)
 BuildRequires: pkgconfig(libmnl)
